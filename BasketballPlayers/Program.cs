@@ -22,10 +22,10 @@ namespace BasketballPlayers
             var output = new HashSet<QualifiedPlayer>();
 
             Console.Write("Type the maximum number of years the player has played in the league in order to qualify: ");
-            var maxYearsToQualify = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            var maxYearsToQualify = int.Parse(Console.ReadLine());
 
             Console.Write("The minimum rating the player should have in order to qualify: ");
-            var minRatingToQualify = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            var minRatingToQualify = int.Parse(Console.ReadLine());
 
             Console.Write("Paste the path to the CSV (comma separated value) file that will be generated: ");
             var pathCsv = Console.ReadLine();
